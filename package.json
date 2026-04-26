@@ -1,0 +1,21 @@
+{
+  "name": "gym-planner-cloud",
+  "version": "1.0.0",
+  "description": "نظام إدارة تمارين الجيم سحابي مرتبط بـ Firebase",
+  "main": "index.html",
+  "scripts": {
+    "start": "echo \"افتح ملف index.html في المتصفح لتشغيل التطبيق\" && exit 1"
+  },
+  "keywords": [
+    "gym",
+    "fitness",
+    "firebase",
+    "cloud-database",
+    "workout-planner"
+  ],
+  "author": "Ahmed",
+  "license": "MIT",
+  "dependencies": {
+    "firebase": "^9.23.0"
+  }
+}

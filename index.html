@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Cloud Planner</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.23.0/firebase-firestore-compat.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body onload="init()">
+
+    <div class="header">
+        <h1>🏋️‍♂️ Gym Cloud Planner</h1>
+        <div class="controls">
+            <button onclick="addNewDay()" class="add-day-btn">➕ إضافة يوم</button>
+            <button onclick="exportToPDF()" class="pdf-btn">حفظ PDF</button>
+            <div id="rest-timer">الراحة: <span id="timer-display">00</span> ثانية</div>
+        </div>
+    </div>
+    
+    <div id="week-container" class="week-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>

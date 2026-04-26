@@ -1,0 +1,106 @@
+:root {
+    --primary: #e67e22;
+    --dark: #2c3e50;
+    --bg: #1a1a1a;
+    --success: #27ae60;
+    --danger: #e74c3c;
+}
+
+body {
+    background-color: var(--bg);
+    color: white;
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    padding: 15px;
+    direction: rtl;
+    margin: 0;
+}
+
+.header {
+    background: var(--dark);
+    padding: 15px;
+    border-radius: 12px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.week-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.day-card {
+    background: var(--dark);
+    border-radius: 15px;
+    padding: 15px;
+    border-top: 5px solid var(--primary);
+    box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #444;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+.input-group {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 5px;
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    background: #1a1a1a;
+    border: 1px solid #444;
+    color: white;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 12px;
+}
+
+button {
+    background: var(--primary);
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.add-day-btn { background: var(--success); font-weight: bold; }
+.del-day-btn { background: var(--danger); font-size: 12px; }
+
+.task-list { list-style: none; padding: 0; }
+.task-item {
+    background: rgba(0,0,0,0.3);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.task-details { font-size: 11px; color: #aaa; margin-top: 4px; }
+
+.timer-control {
+    display: flex;
+    gap: 10px;
+    margin-top: 15px;
+    padding-top: 10px;
+    border-top: 1px solid #444;
+}
+
+.timer-control input { width: 60px; text-align: center; background: #1a1a1a; color: white; border: 1px solid var(--primary); border-radius: 5px; }
